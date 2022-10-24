@@ -258,3 +258,15 @@ footer a img{
         height: 30px;
         width: 30px;
 }
+/* media queries */
+@media (max-width: 770px){
+ .celu{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+ }
+ .celu figure img{
+        height: 192px;
+        width: 192px;
+ }
+}
