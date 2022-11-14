@@ -262,8 +262,9 @@ footer a img{
 @media (max-width: 770px){
  .celu{
         margin-top: 3rem;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
  }
  .celu figure img{
         height: 192px;
