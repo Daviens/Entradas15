@@ -38,7 +38,7 @@ section {
 }
 
 #img1 {
-        background-image: url("./imgs/portada_juli.jpg");
+        background-image: url("./imgs/TARJETA\ 2.jpg");
 }
 
 #img2 {
@@ -66,7 +66,6 @@ section {
         border-width: 1px;
         border-radius: 25px;
 }
-
 .borde {
         border-radius: 10px;
 }
@@ -85,9 +84,12 @@ section {
 }
 
 .regalo {
-        background-color: #9ec6b6;
+        background-color: #FFA9E0;
 }
-
+.agd{
+        height: 130px;
+        background-image: url("./imgs/instagram.jpg")
+}
 .zoom:hover {
         transform: scale(1.2);
         transition: all 0.3s ease-out;

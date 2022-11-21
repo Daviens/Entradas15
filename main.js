@@ -13,3 +13,11 @@ const calcularTiempo = setInterval(function(){
         muestra.innerHTML = "¡Hoy es la fiesta!";
     }
 }, 1000);
+
+const botonDonar = document.getElementById("donacion");
+botonDonar.addEventListener("click", () => {
+    Swal.fire({
+        title: "Datos Bancarios",
+        html: "<p>Julieta Margarita Osuna <br>CVU: 0000003100056204411977 <br> Alias: Juli.osuna <br> CUIT/CUIL: 27464399521 <br> Mercado Pago</p>"
+    })
+})

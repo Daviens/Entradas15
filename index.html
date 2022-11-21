@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- Fancybox and Jquery CDN
+    This link get github repository -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
@@ -30,24 +35,30 @@
         <div class="container row justify-content-center">
             <img src="./imgs/icono-fiesta.svg" class="bounce-in" alt="ícono de fiesta">
             <h3 class="text-center mt-4">Fiesta</h3>
-            <p class="text-center m-2">¡Te espero el <b>Sábado 10 de Diciembre</b> a las <b>22:00 hs</b> en <b>Encarnación 337, Gral. Rodríguez</b> para festejar este gran momento de mi vida!
+            <p class="text-center m-2">¡Te espero el <b>Sábado 10 de Diciembre</b> a las <b>21:00 hs</b> en <b>Encarnación 337, Gral. Rodríguez</b> para festejar este gran momento de mi vida!
             <br> 
             Clickeá en el botón de abajo y encontrá las indicaciones para llegar, ¡nos vemos!😉</p>
             <a class="btn col-sm-4 my-4 rounded-pill boton shadow" target="_blank" href="https://goo.gl/maps/Ycatii6ZPSiMfK436">COMO LLEGAR</a>
         </div>
     </section>
-    <section class="gap-1 px-1 celu">
+    <section class="gap-1 px-1 celu grilla-fotos">
         <figure class="figure">
-            <img src="./imgs/prueba2.jpg" class="figure-img img-fluid borde zoom" alt="...">
+            <a data-fancybox="gallery" href="./imgs/_DSC0241.jpg"><img src="./imgs/_DSC0241.jpg" class="figure-img img-fluid borde zoom" alt="..."></a>
         </figure>
         <figure class="figure">
-            <img src="./imgs/portada_juli.jpg" class="figure-img img-fluid borde zoom" alt="...">
+            <a data-fancybox="gallery" href="./imgs/_DSC0144.jpg"><img src="./imgs/_DSC0144.jpg" class="figure-img img-fluid borde zoom" alt="..."></a>
         </figure>
         <figure class="figure">
-            <img src="./imgs/prueba3.jpg" class="figure-img img-fluid borde zoom" alt="...">
+            <a data-fancybox="gallery" href="./imgs/_DSC0473.jpg"><img src="./imgs/_DSC0473.jpg" class="figure-img img-fluid borde zoom" alt="..."></a>
         </figure>
         <figure class="figure">
-            <img src="./imgs/prueba1.jpg" class="figure-img img-fluid borde zoom" alt="...">
+            <a data-fancybox="gallery" href="./imgs/_DSC0447.jpg"><img src="./imgs/_DSC0447.jpg" class="figure-img img-fluid borde zoom" alt="..."></a>
+        </figure>
+        <figure class="figure">
+            <a data-fancybox="gallery" href="./imgs/_DSC0107.jpg"><img src="./imgs/_DSC0107.jpg" class="figure-img img-fluid borde zoom" alt="..."></a>
+        </figure>
+        <figure class="figure">
+            <a data-fancybox="gallery" href="./imgs/_DSC0599.jpg"><img src="./imgs/_DSC0599.jpg" class="figure-img img-fluid borde zoom" alt="..."></a>
         </figure>
     </section>
     <section class="my-5">
@@ -62,7 +73,7 @@
     <section class="rosa text-center row m-0">
         <div class="container">
             <h4>DRESS CODE</h4>
-            <p class="text-white">Formal elegante</p>
+            <p class="text-white">Elegante Sport</p>
         </div>
     </section>
     <section class="parallax row alturaFiesta m-0" id="img2">
@@ -85,9 +96,10 @@
         <img src="./imgs/icono-regalo.svg" class="bounce-in mt-4" alt="icono regalo">
         <p class="mb-5">Si deseas regalarme algo podés colaborar con mis sueños y anhelos✨
             <br>
-            En el salón dispondremos de una urna para depositar sobres. ¡Muchas gracias!</p>
+            En el evento dispondremos de una urna para depositar sobres, si no te dejo mis datos bancarios. ¡Muchas gracias!</p>
+        <button class="btn col-md-3 m-3 rounded-pill boton shadow" id="donacion">Ver Datos Bancarios</button>
     </section>
-    <section class="rosa text-center text-white">
+    <section class="parallax agd text-center text-white">
         <p>¡Gracias por acompañarme en este momento tan importante!</p>
     </section>
     <footer class="text-center d-flex justify-content-center align-items-center">
@@ -99,6 +111,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
